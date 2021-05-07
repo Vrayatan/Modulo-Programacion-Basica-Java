@@ -1,0 +1,168 @@
+Crear un algoritmo que permita realizar una compra online
+Identificar Entradas, salidas, procesos, variables, constantes y tipos de datos.
+
+Entrada: conexion a internet, dispositivo capaz de navegar por web y conectarse a internet, objeto a comprar
+
+Tipos de variable: bool, bool, string
+
+entrar al sitio web
+buscar el articulo de interes
+enviarlo al carrito de compras
+si deseo comprar otro articulo
+buscar el otro articulo
+si no
+entrar al carrito de compras
+ingresar mis datos de pago
+realizar el pago
+esperar el articulo
+
+
+salida: la compra de uno o varios articulos
+
+____
+
+Crear un algoritmo que permita realizar una liquidación de sueldo, identificar entradas, salidas, procesos, variables, constantes y tipos de datos.
+
+Entrada: Datos identificación del trabajador (Nombre, rut de trabajador), dias trabajados, valor/hora, ausencias, 
+	Variables: días trabajados, datos de identificación del trabajador, numero de ausencias 
+	Constante: Valor/hora trabajada, proporción de descuento previsional, sueldo base, 
+
+
+
+
+Ingresar fecha de contrato (mes, año)
+Ingresar nombre del trabajador
+Ingresar datos de identificación de trabajador (Rut)
+Ingresar sueldo base
+Ingresar número de días trabajados
+Ingresar número de días ausentes
+
+Calcular horas trabajadas por valor/hora trabajada
+
+Aplicar proporción descuentos previsionales
+
+
+
+Salida: Liquidación de sueldo
+
+____
+
+Crear un algoritmo que permita realizar una boleta de honorarios electronica, identificar entradas, salidas, procesos, variables, constantes y tipos de datos.
+
+Entrada: Rut, Razón social, giro, valor solicitado, fecha, datos de destinatario, Porcentaje de retención
+
+Variable: Rut, Razón social, giro, valor solicitado, fecha, datos de destinatario
+Constante: Porcentaje de retención
+
+
+Ingresar numero de boleta emitida
+Ingresar fecha
+Ingresar Rut
+Ingresar Razón social
+Ingresar giro
+Ingresar fecha
+Ingresar datos de destinatario
+Ingresar valor solicitado
+Presionar en emision de boleta
+ 
+Salida: Boleta de honorarios
+_____
+
+
+Problemáticas 
+
+1.Contabilizar inventario de un refrigerador
+    
+2.Contabilizar de inventario y colocación de precios en una tienda virtual.
+
+Requerimientos funcionales
+
+1:
+a. Registrar productos que ingresarán al refrigerador.
+
+constante: ?
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+    
+Proceso:
+    Por cada uno de los productos comprados ingresar su información.
+
+b. Determinar que la cantidad de productos existentes se corresponda con la cantidad minima ingresada.
+ 
+constante: Espacio volumetrico. float.
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+
+Canasta:
+    Productos: Clase producto.
+    FechaRegistro: string.
+
+Proceso:
+    Por cada uno de los productos comprados registrar su salida completa del refrigerador.
+    Registrar si cantidad es menor que la canasta básica.
+ 
+ 
+ 
+c. Realizar la compra en el supermercado.
+
+constante: Espacio volumetrico. float.
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+
+Faltantes:
+    Productos: Clase producto.
+    FechaCompra: string.
+
+Proceso:
+    Si el 80% de la canasta básica esta
+    Registrar si cantidad es menor que la canasta básica.
+
+2:
+a. Ingresar productos y su cantidad al sistema.
+
+Proceso: ingreso de productos(id) y cadintad de existencias
+
+Constante: 
+
+variables: 
+    id. interg 
+    nombre. string
+    cantidad. float
+    medida.  string
+    costo variable. interg
+
+b. Calcular el precio de venta.
+Constante
+costo fijo. int,
+Variable  
+costo variable int   
+
+c. Determinar las existencias
+
+Variables:
+    id. interg 
+    nombre. string.
+    cantidad. float.
+    medida.  string.
+    
+
+    
+
+
+
+    
+    
+
+

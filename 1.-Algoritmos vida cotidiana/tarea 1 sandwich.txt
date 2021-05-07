@@ -1,0 +1,17 @@
+Tarea: Hay que elaborar un algoritmo. La misión es "hacer un sandwich". Considerando la Entrada - Proecso - Salida
+
+
+Entrada: Pan cortado en dos, una lamina de queso, una lamina de jamón, mesa o soporte apropiado.
+
+Proceso:
+
+INICIO
+Disponer materiales de entrada en una mesa o soporte apropiado
+
+Disponer una parte del pan con la miga hacia arriba
+Agregar sobre el pan, la lámina de queso
+Agregar sobre la lámina de queso, una lámina de jamón
+Sobre la lámina de jamón, agregar la otra parte del pan
+FIN
+
+Salida: Sandwich de queso y jamón

@@ -1,0 +1,158 @@
+Actividad 1
+¿qué es la lógica preposicional?
+Intento por sistematizar el razonamiento matemático, surge el concepto de Lógica Proposicional. Como su nombre lo explícita, trabajaremos con proposiciones lógicas; las cuales poseen un valor de verdad (verdadero o falso). Por convención, las denotaremos con letras minusculas. 
+
+Es un sistema formal cuyos elementos más
+simples representan proposiciones, y cuyas
+constantes lógicas, llamadas conectivas lógicas,
+representan operaciones sobre proposiciones,
+capaces de formar otras proposiciones de
+mayor complejidad.
+Ahora bien, una primera clasificación de las
+proposiciones ofrece dos tipos fundamentales
+de proposición, tomando en cuenta su estructura interna:
+
+Proposiciones simples: O proposiciones
+atómicas, poseen una formulación sencilla desprovista de negaciones y nexos (conjunciones o
+disyunciones), por lo que constituyen un único
+término lógico.
+
+Proposiciones compuestas. O proposiciones moleculares, poseen dos términos unidos
+por un nexo, o emplean negaciones dentro de
+su formulación, resultando en estructuras más
+complejas.
+
+___
+Realizar un algoritmo en pseudocodigo que permita sumar dos numeros 
+
+Variables: numero 1 y 2
+
+Leer numero 1
+Leer numero 2
+Escribir numero 1+numero 2
+
+Realizar un algoritmo en pseudocodigo que permita calcular el promedio de 3 notas
+
+Variables: numero 1, 2, 3 
+Ctte: División por 3
+
+Leer numero 1
+Leer numero 2
+Leer numero 3
+Escribir (numero 1+numero 2+numero 3) 
+Escribir (resultado anterior/3)
+
+
+
+Realizar un algoritmo en pseudocodigo que permita calcular el cuadrado de un numero
+ 
+Variable: numero 1
+
+Leer numero 1
+Escribir (numero 1* numero 1)
+
+
+En cada ejercicio determinar variables y ctates involucradas
+____
+
+Actividad grupal 2:
+
+_Modelo y Marca_
+
+String Modelo
+String Marca
+
+Imprimir: "Ingrese el modelo de su vehículo"
+Leer Modelo
+Imprimir: Ingrese la marca de su vehículo"
+Leer Marca
+Imprimir: "El modelo de su vehículo es: "+Modelo+" y su marca es: "+Marca;
+
+____
+Comision Ventas
+Int Sueldo Base
+Int Venta1
+Int Venta2
+Int Venta3
+Int SumaVentas
+Int ComisionVenta
+Int SueldoVentas
+
+Constante
+float comision = 0.1
+
+Escribir ("ingrese sueldo base")
+Leer SueldoBase
+Escribir("Ingrese Venta 1")
+Leer Venta 1
+Escribir("Ingrese Venta 2")
+Leer Venta 2
+Escribir("Ingrese Venta 3")
+Leer Venta 3
+
+//Calcular comision de ventas
+SumaVentas = Venta1 + Venta2 + Venta3
+ComisionVenta = SumaVentas * comision
+SueldoVentas = SueldoBase + ComisionVentas
+
+Escribir("Su comision por las ventas ingresadas es" . ComisionVenta)
+Escribir("Su sueldo quedaria en " . SueldoVentas)
+
+____
+¿Cuanto dinero obrentra por 3 ventas en el mes, considerando su sueldo base y comisiones?
+
+Constante: 
+float 10% de comision, 
+int sueldo base
+
+Variable: 
+Int Valor de venta (V1, V2, V3)
+Int Suma de valores de venta (Vn)
+Int Suma de Valores de venta y comision (Vncom) 
+Int Sueldo total (St)
+
+Imprimir Ingrese valor venta 1
+Leer "Valor de Venta 1", V1
+Imprimir Ingrese valor venta 2
+Leer "Valor de Venta 2", V2
+Imprimir Ingrese valor venta 3
+Leer "Valor de Venta 3", V3
+Calcular: (V1+V2+V3), Vn 
+Calcular Vn * 0.1, Vncom
+Imprimir: Sueldo base + Vncom, St
+
+____
+Actividad, intercambio de valores
+
+Realizar un algoritmo que intercambie valor de 2 variables
+Al inicio A=2
+B=3
+Al final A=3 B=2
+Aalfa=2
+Int Balfa
+Int Abeta
+Int Bbeta
+Int A
+Int B
+Int Momento
+
+Asignar Aalfa=2
+Asignar Balfa=3
+Asignar Abeta=3
+Asignar Bbeta=2
+Asignar A, vacío
+Asignar B, vacío
+Asignar Momento, vacío
+
+Si es momento inicial, asigna Momento=1
+Si Momento=1
+ASigna A=Alfa
+ASigna B=Balfa
+
+Si es momento final, asigna Momento=2
+Si Momento=2
+ASigna A=Abeta
+ASigna B=Bbeta
+
+
+

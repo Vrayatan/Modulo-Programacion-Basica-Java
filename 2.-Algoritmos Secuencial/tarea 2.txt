@@ -1,0 +1,63 @@
+(Trabajo grupal n°1)
+// Cambiar ruedas de un vehiculo
+entrada:chaleco reflectante, triangulos, vehiculo, gata, pernos, neumatico
+
+Poner chaleco reflectante
+Poner triangulos
+Asegurar posicion del vehiculo
+Tengo seguro?
+- Montar gata
+- Soltar pernos
+Elevar Neumatico
+Quitar pernos
+Desmontar Neumatico
+Montar nuevo Neumatico
+Fijar pernos
+Bajar gata
+Apretar pernos
+Quitar gata
+ 
+Salida: rueda cambiada
+
+// Cambiar panal a bebe
+entrada: pañal, bebe sucio, talco, agua
+
+Preparar superfice
+Recostar bebe
+Quitar ropa exterior
+Quitar panal
+Limpiar bebe
+Aplicar talco
+Poner nuevo panal
+Poner ropa exterior
+Eliminar panal usado
+
+salida: bebé limpio
+
+// Cambiar clave de correo electronico
+Entrada: conexion a internet, dispositivo capaz de navegar por web y conectarse a internet, correo
+
+Iniciar sesion
+Ir a configuraciones
+Ingresar clave anterior
+Ingresar nueva clave
+Cerrar sesion
+
+salida: correo con clave cambiada.
+_______
+(Trabajo grupal n°2)
+Entrada: conexion a internet, dispositivo capaz de navegar por web y conectarse a internet.
+
+entrar al sitio web
+buscar el articulo de interes
+enviarlo al carrito de compras
+si deseo comprar otro articulo
+buscar el otro articulo
+si no
+entrar al carrito de compras
+ingresar mis datos de pago
+realizar el pago
+esperar el articulo
+
+
+salida: la compra de uno o varios articulos
