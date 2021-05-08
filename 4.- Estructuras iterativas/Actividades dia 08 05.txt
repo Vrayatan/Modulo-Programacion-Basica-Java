@@ -1,0 +1,215 @@
+___Actividades 08 05____
+
+//Calcular multiplicacion de N numeros ingresados por usuarios que sean numeros primos
+
+int respuesta=0
+float número
+float multiplicación
+
+Inicio
+
+multiplicación=1
+Imprimir "ingrese numeros primos a multiplicar"
+Leer numero
+
+Si (numero%3 !=0 && numero%3 !=0)
+	multiplicación=numero
+	Imprimir "ingrese el siguiente numero primo"
+	Leer numero
+	Si (numero%3 !=0 && numero%3 !=0)
+		multiplicación*numero
+		Imprimir "¿desea agregar otro numero? (1)Sí (2)No"
+		Leer respuesta
+		Mientras respuesta==1
+			Entonces respuesta=0
+			Imprimir "ingrese el siguiente numero primo"
+			leer numero
+			Si (numero%3 !=0 && numero%3 !=0)
+			multiplicación*numero
+			Imprimir "¿desea agregar otro numero? (1)Sí (2)No"
+			Leer respuesta
+
+	Sino
+	Imprimir "el número no es primo"
+	
+Sino
+Imprimir "el número no es primo"
+
+
+___
+//Otra forma de lo anterior
+
+i=1
+cantidad
+multiplicacion=1
+numero
+
+Inicio
+Escribir "ingresar cantidad de numero"
+leer cantidad
+
+Mientras (i<=cantidad)
+	escribir "ingresa un número"
+	leer número
+	Si (numero%2 !=0 && numero%3 !=0 && numero>=2)
+		multiplicación*numero
+		i++
+	sino
+	imprimir "el numero no es primo"
+
+
+_Revisar_
+
+
+____
+Actividad 2
+//Sumor solo numeros pares ingresados x usuario
+
+int cantidad
+float numero
+int suma
+int i
+
+Inicio
+suma=0
+
+imprimir "ingresar cantidad de numeros a sumar"
+leer cantidad
+
+Mientras (i<=cantidad)
+	imprimir "ingresa un número"
+	leer número
+	Si (numero%2 ==0)
+		suma+numero
+		i++
+	Sino 
+		imprimir "el número no es par"
+imprimir "la cantidad sumada es" i
+
+Fin
+
+___
+
+Activ 3
+//det. candidad de numeros multiplos de 5 que fueron ingresados  x usuario
+
+int cantidad
+float numero
+
+
+inicio
+imprimir "ingresar cantidad de numeros que desea ingresar"
+leer cantidad
+mientras (i<=cantidad)
+	imprimir "ingresa un número"
+	leer número
+	Si (numero%5==0)
+		i++
+imprimir "usted ingreso " i " multiplos de 5"
+
+fin
+
+_:__
+Activ 4
+
+//Sumar numeros pares e impares ingresados por usuario y contar cantidad de numeros pares e impares
+
+int cantidad
+float suma
+int i
+int par 
+int impar
+
+
+inicio
+
+suma=0
+impar=0
+par=0
+imprimir "ingresar cantidad de numeros que desea ingresar"
+leer cantidad
+mientras (i<=cantidad)
+	 imprimir "Ingrese numero"
+	Leer numero
+	Hacer
+	para (numero %2 == 0)
+		suma+numero
+		par++	
+	para (numero %3 ==0)
+		suma+numero
+		impar++
+	i++	
+imprimir "la suma de los numeros es" suma
+imprimir "la cantidad de numeros pares es" par
+imprimir "la cantidad de numeros impares es" impar
+
+
+____
+//Suma de pares. multiplicacion de impares. determinar si numeros fueron mas pares o impares
+
+int cantidad
+float suma
+int i
+int par 
+int impar
+
+
+inicio
+
+multiplicacion=1
+suma=0
+impar=0
+par=0
+imprimir "ingresar cantidad de numeros que desea ingresar"
+leer cantidad
+mientras (i<=cantidad)
+	 imprimir "Ingrese numero"
+	Leer numero
+	Hacer
+	para (numero %2 == 0)
+		suma+numero
+		par++	
+	para (numero %3 ==0)
+		multiplicacion*numero
+		impar++
+	i++	
+
+imprimir "la suma de los numeros es" suma
+imprimir "la cantidad de numeros pares es" par
+imprimir "la cantidad de numeros impares es" impar
+
+Si (par<impar),
+	imprimir "El numero de numeros pares es menor que el de impares"
+Si (par>impar),
+	imprimir "El numero de numeros pares es mayor que el de impares"
+Si (par=impar),
+	imprimir "El numero de numeros pares es igual al de impares"
+
+fin
+
+____
+Activ 4
+//Promedio de N notas, ¿aprueba o no?
+
+int cantidad
+float suma
+int i
+float nota
+float promedio
+
+suma=0
+imprimir "¿cuantas notas desea ingresar?"
+leer cantidad
+mientras (i<=cantidad)
+	 imprimir "Ingrese nota" i
+	Leer nota
+	suma+nota
+	i++
+nota/i=promedio
+imprimir "el promedio de notas es:" promedio
+Si promedio<4
+	imprimir "el alumno no aprueba"
+Si promedio>4
+	imprimir "el alumno aprueba"	
+
+fin	
