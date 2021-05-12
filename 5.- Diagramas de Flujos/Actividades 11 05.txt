@@ -1,0 +1,143 @@
+Actividades dia 11 05
+
+// PS y DDF. Determinar ganancia obtenida de la venta de la uva.
+
+uvaA 20 si t1
+uvaA 30 si t2
+
+uvaB 30 si t1
+uvaB 50 si t2
+
+double kilodeuva
+float uvaA = 0
+float uvaB = 0
+double At1=0
+double At2=0
+double Bt1=0
+double Bt2=0
+
+Inicio
+
+
+
+
+Imprimir "Ingrese kg de uva enviado"
+Leer kilodeuva
+Si kilodeuva>0
+Entonces...
+	Imprimir "¿Cuántos kilos de uva son tipo A?"
+Leer uvaA
+Para uvaA>0
+	Imprimir"¿Cuántos kilos de uva son tipo A tamaño 1?"
+	Leer At1
+	At1*20
+	Imprimir"¿Cuántos kilos de uva son tipo A tamaño 2?"
+	Leer At2
+	At2*30
+Fin para
+
+Imprimir "¿Cuántos kilos de uva son tipo B?"
+Leer uvaB
+Para uvaB>0
+	Imprimir"¿Cuántos kilos de uva son tipo B tamaño 1?"
+	Leer Bt1
+	Bt1*30
+	Imprimir"¿Cuántos kilos de uva son tipo B tamaño 2?"
+	Leer Bt2
+	Bt2*50
+Fin para
+At1+At2+Bt1+Bt2=sumakguva
+
+
+	Imprimir "El precio total de la venta es" sumakguva
+Sino
+	Imprimir "no se ha enviado kilos de uva"
+
+Fin
+____
+
+Actividad 2 
+
+//Determinar pago a comp. de autobuses y lo que debe pagar cada alumno por el viaje. PS y DDF
+
+Int alumnos 
+
+
+alumnos >100 = 6500 cu
+100>alumnos>49 7000 cu
+50>alumnos>29  9500 cu
+30>alumnos 400k total
+
+Inicio
+
+Imprimir "ingrese numero de alumnos a viajar"
+Leer alumnos
+Para
+	alumnos >100
+		alumnos * 6500 = costo
+	100>alumnos>49
+		alumnos * 7000  = costo 
+	50>alumnos>29
+		alumnos * 9500  = costo
+	30>alumnos
+		costo = 400k
+
+costo / alumnos = costoI
+Imprimir "el costo total de arriendo es" %costo
+Imprimir "cada alumno debe pagar" %costoI
+
+Fin
+___
+Act 3
+
+// Determinar cuanto debe pagar por cada concepto una persona que realiza una llamada. PS y DDF
+
+primero 5m = 100 cu
+siguientes 3m = 80 cu
+2m 70
+10 en adelante 50
+
+impuesto de 3% cuando es domingo
+No domingo =
+	15% turno matutino
+	10% vespertino.
+
+__
+int día
+int minutos
+double impuesto
+int horario
+double total
+
+Inicio
+impuesto = 1
+
+Imprimir "¿cuantos minutos ha hablado?"
+Leer minutos
+Segun
+	minutos<=5
+		100* minutos = totalm
+	5< minutos <= 8 
+		80* (minutos - 5)= totalm
+	8< minutos <= 10 
+		70* (minutos - 8)= totalm
+	10<= minutos 
+		50 * (minutos - 10 ) = totalm
+Fin para
+
+Imprimir "¿en que día habló? (1) L (2) M (3) Mie (4) J (5) V (6) S (7) D"
+Leer dia
+Sí día = 7
+	impuesto + 0.03
+Sino
+	Imprimir "¿en que horario fue la llamada? (1) Matutino (2) Vespertino"
+		Leer horario
+		Si horario = 1
+			impuesto + 0.15
+		Sino 
+			impuesto + 0.15
+
+totalm		* impuesto = total
+Imprimir "el costo de la llamada es" %total
+
+Fin
