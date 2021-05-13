@@ -1,0 +1,115 @@
+Actividades 12 05
+
+//Determinar costo total y por persona del viaje.
+Comp 
+busA = 200 pk
+busB = 250 pk
+busC = 300 pk
+si 20 p = costo x persona
+si menos = 20 p
+
+int bus
+float kmR
+float kmTotal
+float kmPers
+int pers
+
+Inicio
+
+print "cuantos km recorrera"
+leer kmR
+
+print "en que bus desea viajar (1) A (2) B (3) C"
+leer bus
+para bus == 1
+	hacer kmR * 200 = kmTotal
+para bus == 2
+	hacer kmR * 250 = kmTotal
+para bus == 3
+	hacer kmR * 300 = kmTotal
+
+print "cuantas personas viajan en el bus"
+read pers
+Si pers<20
+	kmR/20 = kmPers
+si no 
+	mR/pers = kmPers
+
+print "La cantidad a pagar por cada persona es de" %kmPers
+print "La cantidad a pagar en total es de" %kmTotal
+
+Fin
+
+___
+//algoritmo para determinar cuanto debe pagar una persona x N hambug
+
+hamA 2000
+hamB 2500
+hamC 2800
+
+recargo 0.05
+int cantH
+char tipH
+int totalh
+double totalp
+
+
+Inicio 
+
+print ¿cuántas hamburguesa compro?
+leer cantH
+
+print ¿qué tipo de hamburguesas compró? A, B o C
+leer tipH
+Para tipH == A
+	2000 * cantH = totalh
+Para tipH == B
+	2500 * cantH = totalh
+Para tipH == C
+	2800 * cantH = totalh
+
+totalh*1.05 = totalp
+
+imprimir usted debe pagar %totalp
+
+
+Fin
+
+___
+
+//  Algoritmo para determinar cto pagara el paciente x la cita y cuanto se ha pagado x el tratamiento. 
+
+3 primeras citas 200
+sig 2 150
+sig 3 100
+restantes 50
+
+int ncita
+float pagadocita 
+float vcita
+
+Inicio
+print ¿qué numero de cita es esta?
+leer ncita
+para  	ncita <= 3
+		vcita = 200
+	3 < ncita <= 5
+		vcita= 150
+	5 < ncita <= 8
+		vcita= 100
+	8 < ncita
+		vcita= 50
+
+para 	vcita == 200
+		(ncita * 200) - 200 = pagadocita
+	vcita == 150
+		600 + (ncita * 150) - 150 = pagadocita
+	vcita == 100
+		900 + (ncita * 100) - 100 = pagadocita
+	vcita == 50
+		1200 + (ncita * 50) - 50 = pagadocita
+
+imprimir usted ha pagado %pagadocita hasta ahora
+imprimir usted debe pagar %vcita esta sesion
+
+fin
