@@ -1,0 +1,137 @@
+Actividades 4 13 05
+
+//Calcular precios de venta el cometa
+
+Art1
+Art2
+Art3
+Art4
+Art5
+Art6
+
+costprod=mpri+mobr+gfab
+precvent=costprod  * 1.45
+
+para 	art3 y art4, mobr =  mprim * 1.75
+	art1, art5; mobr = mprim * 1.8
+	art2, art6; mobr = mprim * 1.85
+para 	art2, art5, gfab = mprim * 1.3
+	art3, art6, gfab = mrpim * 1.35
+	art1, art4, gfab = mrpim * 1.28
+mprim = constante a todos 
+
+
+int Art1
+int Art2
+int Art3
+int Art4
+int Art5
+int Art6
+float costprod
+float mprim
+float mprim1
+float mrpim2
+float precvent
+float costprod
+
+Inicio
+print "¿qué articulo desea fabricar? (1), (2), (3)...."
+leer art
+para
+	art=1, art=art1
+	art=2, art=art2
+	art=3, art=art3
+	art=4, art=art4
+	art=5, art=art5
+	art=6, art=art6
+print "¿cuánto gastó en materia prima?"
+leer mprim
+mprim=mprim1
+mprim=mprim2
+para
+	art1 // art5, mobr = mprim2 * 0.8
+	art2 // art6, mobr = mprim2 * 0.85
+	art3 // art4, mobr = mprim2 * 0.75
+fin para
+para
+	art2 // art5, gfab = mprim1 * 0.3
+	art3 // art6, gfab = mprim1 * 0.8
+	art1 // art4, gfab = mprim1 * 0.8
+fin para
+
+costprod=mprim+mprim1+mprim2
+precvent=costprod + costprod * 0.45
+
+El precio de venta del articulo es %precventa
+
+
+Fin
+
+
+__
+
+Activ 2
+//suma de 10 cantidades mediante la utilizacion del ciclo para
+
+float suma
+float numeroB
+
+inicio
+imprimir "ingrese el primero de 10 numeros"
+leer suma
+i=1
+hacer mientras  0<i<=10
+	imprimir ingrese el siguiente numero
+	leer numeroB
+	suma+numeroB
+	imprimir la suma numero %i es %suma
+	i++
+fin hacer mientras
+la suma total es total  %suma
+fin
+
+__
+Activ 3
+//edad promedio de un grupo de N alumnos
+
+int alumnos
+int sumaA
+float promedioA
+
+inicio
+print ingrese el numero de alumnos que quiere comparar
+leer alumnos
+i=0
+sumaA=0
+para i<=alumnos
+	print ingre la edad del alumno %i+1
+	leer edad
+	sumaA+edad
+	i++
+fin para
+sumaA/alumnos=promedioA
+print el promedio de edades de los alumnos es %promedioA
+Fin
+
+___
+// cuanto ahorrara una persona en un año, si cada mes deposita diferentes cant. de dinero ¿cuanto ahorra cada mes?
+
+float suma= 0
+int i=1
+float ahorro
+
+
+inicio
+printf "ingrese el ahorro numero %i"
+leer ahorro
+suma+ahorro
+mientras i<=12
+	print "ingrese el ahorro numero %i+1	
+	leer ahorro
+	suma + ahorro
+	i++
+	print "haste el mes numero %i usted lleva ahorrados %suma"
+fin mientras
+
+a lo largo de un año usted ahorró %suma
+fin
