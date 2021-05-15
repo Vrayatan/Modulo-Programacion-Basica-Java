@@ -1,0 +1,6 @@
+1. Hoy busqué cómo usar Visual Studio Code para trabajar en Java. A pesar de que lo intenté, fue un fastidio. No entendi nada.
+2. Posteriormente instalé el NetBeans lo que igual podría haber sido complicado pero el tutorial de youtube me funcionó.
+3. Le instale el dark mode a NetBeans y unas fuentes bonitas.
+4. Busqué qué librería de java ocupa grasshopper. Aparentemente utiliza una libreria D3.js 
+5. No la pude instalar, pero seguiré buscando información. 
+
