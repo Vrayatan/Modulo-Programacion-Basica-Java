@@ -1,0 +1,185 @@
+Evidencia día 14 05
+
+
+Cambio de numeros
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package cambiodenumeros;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Cambiodenumeros {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        float numero;
+        float numero2;
+        float suma;
+        float numero3;
+         System.out.println("-Cambio de Variables-");
+        System.out.println("ingresar un valor para la variable numero");
+        numero =  leer.nextInt();
+        System.out.println("ingresar un valor para número2 ");
+        numero2 =  leer.nextFloat();
+        // se almacenan A en numero y B en numero2
+        
+       
+        suma=numero2;
+        numero3=numero;
+        //se almacena A en numero3 y B en suma
+        
+      
+        numero=suma;
+        numero2=numero3;
+               
+        System.out.println("el valor de numero es: "+numero);
+        System.out.println("el valor de numero2 es: "+numero2);
+    }
+    
+}
+
+___
+
+Asignacion de variables y suma y resta
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Hello World");
+    byte $hola;
+    byte _num=120;
+    short numero2=12345;
+    int numero3=1235;
+    long numero4=464546;
+    float numero5=2.5f;
+    double numero6=2.5;
+    
+    //para crear variable, solo puede empezar con $, _ o letras.
+    
+    System.out.println("El valor de la variable numero2 es " +numero2);
+    System.out.println("El valor de la variable _num es " +_num);
+    System.out.println("Algunos valores de variable son "+numero3+", "+numero4+""
+            + " y "+numero5);
+    
+    int numero1313=1212, numero1212=1313;
+        int suma;
+               suma = numero1212+numero1313;
+        int resta;
+                resta = numero1313-1212;
+        System.out.println("la resta de 1313 y 1212 es: "+resta);
+    System.out.println("la suma de 1313 y 1212 es: "+suma);
+   
+    }
+}
+    
+___
+Suma de numeros
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        int numero;
+        float numero2;
+        float suma;
+         System.out.println("-Suma de 2 numeros-");
+        System.out.println("ingresar un valor para la variable ");
+        numero =  leer.nextInt();
+        System.out.println("ingresar un valor para número2 ");
+        numero2 =  leer.nextFloat();
+        System.out.println("El valor de la variable numero es "+numero);
+        System.out.println("El valor de la variable numero2 es "+numero2);
+        suma=numero+numero2;
+        System.out.println("El valor de la variable numero2 es "+suma);
+    }
+    
+}
+___
+Promedio de 4 numeros
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package promedio4n;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Promedio4n {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+          Scanner leer = new Scanner(System.in);
+        int numero;
+        float numero2;
+        int numero3;
+                int numero4;
+                        float suma;
+                        float promedio;
+        
+         System.out.println("-Promedio 4 numeros-");
+        System.out.println("ingresar un valor para la variable numero1");
+        numero =  leer.nextInt();
+        System.out.println("ingresar un valor para número2 ");
+        numero2 =  leer.nextFloat();
+        System.out.println("ingresar un valor para la variable numero3");
+        numero3 =  leer.nextInt();
+        System.out.println("ingresar un valor para número4 ");
+        numero4 =  leer.nextInt();
+        
+        suma=numero+numero2+numero3+numero4;
+        promedio=suma/4;
+        System.out.println("el promedio de los 4 numeros es " +promedio);
+    }
+    
+}
+
