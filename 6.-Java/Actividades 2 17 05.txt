@@ -1,0 +1,134 @@
+Actividades día 17 05
+__ Actividad 1 __
+
+package javaapplication8;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class JavaApplication8 {
+//Capturar Y leer Variables
+    
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+Scanner leer= new Scanner (System.in)        ;
+int numero;
+int numero2;
+System.out.println("ingresar un numero ");
+numero= leer.nextInt();
+System.out.println("el numero es "+numero);
+
+System.out.println("ingresar un 2do numero ");
+numero2= leer.nextInt();
+System.out.println("el 2do numero es "+numero2);
+
+//Funciones  condicionantes
+if(numero>0){
+    System.out.println("El numero 1 es mayor que 0. ");
+  
+if(numero<12){
+    System.out.println("El numero 1 es menor que 12");
+    
+}else{
+    System.out.println("El numero es mayor que 12");
+}
+
+//and
+if(numero%2==0 && numero>numero2){
+    System.out.println("El numero 1 es par y es mayor q el segundo");
+}
+    
+
+}
+
+    }
+    
+}
+
+
+
+___ Actividad 2 ___
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package actividad2;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Actividad2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+//Ejercicio ¿Desea boleta? Para dar boleta
+Scanner leer= new Scanner (System.in)        ;
+int numero;
+int numero2;
+int vuelto;
+int siono;
+int siono2;
+
+System.out.println("¿Qué programa desea utilizar?\n1. Discutidor; 2. ¿Debo dar una boleta?; "
+        + "3. Orientador de problemas. ");
+numero2= leer.nextInt();
+
+if(numero2==2){
+            System.out.println("¿Cuánto pagó el cliente? ");
+            numero= leer.nextInt();
+
+            if (numero>-1){
+
+            if (numero==0){
+            System.out.println("El cliente no pagó, no le de boleta");        
+                }
+
+            if (numero>-1){
+            if (0<numero && numero<300){
+                System.out.println("La compra es menor a 300, no entegue boleta");
+            }else{
+            System.out.println("Entregue boleta con el valor: "+numero);
+            }
+            }
+            }else{
+            System.out.println("Error: el valor es negativo. Reinicie el programa");    
+
+                }
+    }else if (numero2==1){
+    System.out.println("¿Sí(1) o no(2)?");
+    siono = leer.nextInt();
+        if (siono==1){
+            System.out.println("No");
+        }else{
+            System.out.println("Sí");
+        }
+    }else if (numero2==3){
+       System.out.println("¿Desea resolver el problema? \n"
+               + "Sí(1) o no(2)");
+    siono2 = leer.nextInt();
+        if (siono2==1){
+            System.out.println("Resuelvalo");
+        }else{
+            System.out.println("No lo resuelva. O busque querer resolverlo.");
+        }
+    
+    }
+
+                
+            }
+
+
+
+
+
+
+}

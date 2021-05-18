@@ -1,0 +1,6 @@
+Bitacora 17 05
+
+1. Seguí intentando instalar la libreria D3js pero me di cuenta que era javascript y no Java. JaJa.
+2. Leí sobre cómo utilizar Javascript en NetBeans. 
+3. Experimente un poco de Javascript pero al parecer no me servirá para el curso jaja.
+4. Busqué sobre comandos en Java para terminar el ejercicio propuesto al final de clases. Encontre distintos comandos booleanos, strings, etc. \n es para saltos de linea.
