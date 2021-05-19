@@ -1,0 +1,206 @@
+_ Actividades 18 05_
+
+Chismefon___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package chismefon;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Chismefon {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer= new Scanner (System.in)        ;
+        int dia;
+                int minutos;
+                        int horario;
+                                float impuesto=1f;
+                                        float total;
+                                        float totalm = 0;
+                                        
+        
+        System.out.println("¿Cuántos minutos ha hablado el cliente?");
+                                        minutos= leer.nextInt();
+ if (minutos <= 5) {
+     totalm=100*minutos;
+ }
+ else if (5<minutos  && minutos<=8 )                                  {
+     totalm=80*(minutos-5)+500;
+ }
+ else if (8<minutos  && minutos<=10 )                                  {
+     totalm=70*(minutos-8)+740;
+ }
+ else if (10<minutos )                                  {
+     totalm=50*(minutos-10)+840;
+ }
+ 
+  System.out.println("¿Qué día de la semana habló?\n"
+          + "(1)Lunes\n"
+          + "(2)Martes\n"
+          + "(3)Miercoles\n"
+          + "(4)Jueves\n"
+          + "(5)Viernes\n"
+          + "(6)Sabado\n"
+          + "(7)Domingo\n");
+                    dia= leer.nextInt();
+                    if (dia==7){
+                       impuesto = impuesto + 0.03f ;
+                    }
+                    else{
+                        System.out.println("¿En qué horario fue la llamada?\n"
+                                + "(1)Matutino\n"
+                                + "(2)Vespertino");
+                    horario= leer.nextInt();    
+                    if (horario==1)
+                    {
+                        impuesto = impuesto + 0.15f;
+                    }else if (horario == 2){
+                    impuesto = impuesto + 0.10f;
+                    }
+                    }
+                    total = totalm*impuesto;
+                    System.out.println("El costo de la llamada es de\n"+total);
+   
+    }
+    
+}
+
+
+____
+
+Mayor de 3
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mayorde3.pkg2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class MayorDe32 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        
+        
+      int numero1;
+      int numero2;
+      int numero3;
+        // TODO code application logic here
+        Scanner leer= new Scanner (System.in)        ;
+       System.out.println("introduzca 3 numeros");
+       numero1= leer.nextInt();
+               numero2= leer.nextInt();
+       numero3= leer.nextInt();
+
+                  System.out.println("numeros ordenados de mayor a menor:");
+
+       
+    if(numero1>numero2){
+           if(numero3>numero1){
+                System.out.println(numero3);    
+                }
+           
+        System.out.println(numero1);
+           if(numero3<numero1 && numero3>numero2){
+                System.out.println(numero3);   
+                }
+        System.out.println(numero2);
+            if(numero3<numero2){
+                System.out.println(numero3);
+            }
+           
+       }
+    if(numero2>numero1){
+           if(numero3>numero2){
+                System.out.println(numero3);    
+                }
+        System.out.println(numero2);
+           if(numero3<numero2 && numero3>numero1){
+                System.out.println(numero3);   
+                }
+        System.out.println(numero1);
+            if(numero3<numero1){
+                System.out.println(numero3);
+            }
+       }
+    }
+    
+}
+_____
+Comando switch:
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package comando.pkgswitch;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class ComandoSwitch {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner (System.in);
+        int valor;
+        System.out.println("Entras a un bar y el bartender te pregunta\n"
+                + "¿Qué deseas hoy?\n"
+                + "\nElige una opción:\n"
+                + "(1)Un whisky para el dolor de garganta\n"
+                + "(2)Un vasito de agua para la caña\n"
+                + "(3)A ti :x");
+                                                valor= leer.nextInt();
+
+        
+        switch(valor) {
+  case 1:  System.out.println("Tomas un whisky.\n"
+          + "El alcoholismo te lleva a tomar otro y otro\n"
+          + "Te pones a pelear, vomitas  y te llevan preso\n"
+          + "Casima -2, Voluntad -1. Estado detenido.");
+    // code block
+    break;
+  case 2: System.out.println("No pasa nada. Es una noche tranquila.\n"
+          + "Recuperas 10 de HP");
+    // code block
+    break;
+case 3: System.out.println("El bartender se sonroja y te da su numero\n"
+        + "Carisma + 1");
+    // code block
+    break;
+  default: System.out.println("No ingresaste una opción válida\n"
+          + "Pierdes la ocasión de pedir algo. El bartender se dirige a otra persona.\n "
+          + "No vuelve.");
+        
+    }
+    
+}
+}

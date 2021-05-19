@@ -1,0 +1,3 @@
+Bitacora 3 18 05 
+1.Experimentacion con float y aprendizaje de switch antes de que lo enseñaran en clase.
+2. Investigue el error: How to fix "variable might not have been initialized" error in Java
