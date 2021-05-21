@@ -1,0 +1,5 @@
+Bitacora 20 05
+
+1. Investigué la variable long y por qué no quería funcionar mi programa con el numero gigante del ejercicio de numeros perfectos.
+Descubrí que para los valores que se le ignresen a esta variable hay que finalizar con L. Por ejemplo 132135116L.
+2. Además busqué por qué habian algunas funciones que convertian la variable a int. Como Switch. Switch no admite longs y transforma long a int automaticamente.

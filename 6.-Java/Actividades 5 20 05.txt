@@ -1,0 +1,148 @@
+Actividades 20 05
+___Numeros perfectos
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package actividad.pkg3;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Actividad3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer= new Scanner(System.in); 
+        long valor;
+        long ultimo = 8589869056L;
+        System.out.println("¿Es perfecto su numero? \n"
+                + "Ingrese numero a comprobar");
+        valor = leer.nextLong();
+       if(valor==6L)
+       {
+           System.out.println("Su número es perfecto");
+       }else if (valor == 28L) {
+           System.out.println("Su número es perfecto");
+        }else if (valor == 496L) {
+           System.out.println("Su número es perfecto");
+        }else if (valor == 8128L) {
+           System.out.println("Su número es perfecto");
+        }else if (valor == 33550336L) {
+           System.out.println("Su número es perfecto");
+        }else if (valor == ultimo) {
+           System.out.println("Su número es perfecto");
+        }else{
+           System.out.println("Su número no es perfecto");
+        }
+        
+        
+    }
+    
+}
+___
+Ejercicio numeros pares e impares , suma multiplicacion y adicion__
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicio.pkg2;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Ejercicio2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double numerodenumeros;
+        double valor;
+        double sumapares = 0;
+        double multiplicacionimpares=1;
+        int numerospares= 0;
+        int numerosimpares= 0;
+        Scanner leer= new Scanner (System.in);
+        System.out.println("¿Cuántos numeros desea ingresar?");
+            numerodenumeros = leer.nextDouble();
+            
+        for (int i=1; i <= numerodenumeros; i++) {
+            System.out.println("Ingrese un numero: ");
+                 valor = leer.nextDouble();
+            if (valor%2== 0){
+                    sumapares = valor + sumapares;
+                    numerospares= numerospares +1;
+            }
+            if (valor%3== 0){
+                    multiplicacionimpares = multiplicacionimpares*valor;
+                    numerosimpares = numerosimpares + 1;
+            }
+        }
+        System.out.println("La suma de numeros pares fue: "+sumapares);
+        System.out.println("La multiplicacion de numeros impares fue: "+multiplicacionimpares);
+            if(numerosimpares<numerospares) {
+                System.out.println("La cantidad de numeros pares fue mayor");
+            }
+            if(numerosimpares>numerospares) {
+                System.out.println("La cantidad de numeros impares fue mayor");
+            }
+                  if(numerosimpares==numerospares) {
+                System.out.println("La cantidad de numeros impares fue igual a la de pares");
+            }
+                        
+    
+    }
+    
+}
+
+____Promedio de n notas ingresadas  xusuario:__
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package promediodennotas;
+
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class PromediodeNNotas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer= new Scanner (System.in);
+        double valor;
+        double numerodenumeros;
+        double suma = 0;
+    double promedio;
+        System.out.println("¿Cuántos numeros desea ingresar?");
+            numerodenumeros = leer.nextDouble();
+            for (int i=1; i <= numerodenumeros; i++) {
+        System.out.println("Ingrese un numero: ");
+            valor = leer.nextDouble();
+            suma = suma + valor;
+    }
+        promedio = suma / numerodenumeros;
+            System.out.println("El promedio de los numeros es: "+promedio);    
+                    
+            
+    }
+    
+}
