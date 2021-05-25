@@ -1,0 +1,6 @@
+Bitacora 24 05 
+
+1.Investigué los comandos iterativosde nuevo porque se me habian olvidado
+2. investigue sobre variables estaticas y no estaticas porque IDE me tiraba error.
+3. Investigué cómo separar los digitos de un numero  de manera matematica.
+4. Investigué como añadir ceros a la izquierda de los digitos a imprimir

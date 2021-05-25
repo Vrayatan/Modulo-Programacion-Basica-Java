@@ -1,0 +1,238 @@
+Actividades 24 05
+
+__Actividad HMS Teclado___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hms.teclado;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class HMSTeclado {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int hora;
+        
+        Scanner leer = new Scanner (System.in);
+        
+        System.out.println("¿Es valida su hora? \n"
+                + "Ingrese digitos de la hora (0-24)");
+        hora = leer.nextInt();
+         if (hora<24 && hora>-1) {
+
+
+                        System.out.println("Ingrese digitos de los minutos (0-60)");
+                  int minutos;
+                        minutos = leer.nextInt();
+                   if (minutos<60 && minutos>-1) {
+System.out.println("Ingrese digitos de los segundos (0-60)");
+                        int segundos;
+                              segundos = leer.nextInt();
+                         if (segundos<60 && segundos>-1) {
+System.out.println("Su hora es valida. \n"
+        + "La hora ingresada es:\n"
+        + "" +hora
+        + ":" +minutos
++ ":"+ segundos);
+                        }else{
+                        System.out.println("Los segundos ingresados son invalidos\n" );    
+                         }
+                  }else{
+                  System.out.println("Los minutos ingresados son invalidos\n" );    
+                   }
+        }else{
+        System.out.println("La hora ingresada es invalida\n" );    
+         }
+        
+    }
+    
+}
+
+
+___ Actividad Numero de la suerte ___
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package numero.de.la.suerte;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class NumeroDeLaSuerte {
+
+    /**
+     * @param args the command line arguments
+     */
+    
+    public static void main(String[] args) {
+        
+        int dia;
+int mes;
+int año;
+
+int numero1;
+int numeroA;
+int numeroB;
+int numeroC;
+int numeroD;
+int numeroE;
+
+
+        // TODO code application logic here
+        Scanner leer= new Scanner(System.in);
+        System.out.println("Programa para determinar su numero de la suerte.\n"
+                + "Ingrese su dia de nacimiento:");
+        
+                 dia = leer.nextInt();
+                 
+        System.out.println("Ingrese su mes de nacimiento:");
+        
+                 mes = leer.nextInt();
+        
+           System.out.println("Ingrese su año de nacimiento:");
+        
+                 año = leer.nextInt();
+        
+                 numero1= dia+mes+año;
+                 
+                            System.out.println("La suma de estos numeros es: "+numero1 );
+
+                 //1998
+                  //for (int i = 0; i <= 4; i++){
+                    //  numeroA = (1998 - 1998) + 10;
+                  //}
+            numeroA = numero1%10;
+            numero1 = numero1/10;
+            
+            numeroB = numero1%10;
+            numero1 = numero1/10;
+            
+             numeroC = numero1%10;
+            numero1 = numero1/10;
+            
+             numeroD = numero1%10;
+            numero1 = numero1/10;
+            
+            
+            
+              System.out.println("Sus digitos de la suerte son: \n"+numeroD);
+              System.out.println(""+numeroC);
+                   System.out.println(""+numeroB);
+                   System.out.println(""+numeroA);
+             
+                   int numeroDS;
+                   numeroDS = numeroA+numeroB+numeroC+numeroD;
+              System.out.println("La suma de sus digitos de la suerte es: "+numeroDS );     
+              System.out.println("Su numero de la suerte es: "+numeroDS );    
+                
+                  
+    }
+    
+}
+___ Actividad Selección entre op basic ___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package seleccion.entre.opbasic;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class SeleccionEntreOpbasic {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int contador=1;
+        
+        while (contador==1) {            
+            
+       
+          Scanner leer = new Scanner (System.in);
+          System.out.println("Ingrese qué tipo de operación desea realizar: \n"
+                  + "(1)Suma\n"
+                  + "(2)Resta\n"
+                  + "(3)Multiplicación\n"
+                  + "(4)División\n"
+                  + "(5)Terminar el programa"
+          );
+          
+                  
+          int operación;
+operación = leer.nextInt();
+if (operación<5 && operación>0)
+{
+    
+
+        System.out.println("Ingrese el numero 1 a operar: ");
+double numero1;
+double numero2;
+double resultado=0;
+        numero1 = leer.nextDouble();
+        System.out.println("Ingrese el numero 2 a operar: ");
+        numero2 = leer.nextDouble();
+        
+        switch (operación)
+        {
+            case 1: resultado=numero1+numero2;
+            break;
+            case 2: resultado=numero1-numero2;
+            break;
+            case 3: resultado=numero1*numero2;
+            break;
+            case 4: resultado=numero1/numero2;
+            break;
+            default: System.out.println("El número de operación seleccionado es invalido");
+                  break;
+        }
+       System.out.println("El resultado de su operación es: "+resultado
+       + "\n¿Desea realizar otra operación?\n"
+               + "(1)Sí\n"
+               + "(2)No");
+       int continuar;
+       continuar = leer.nextInt();
+       
+       switch (continuar){
+           case 1: contador=1;
+           break;
+           case 2: contador=0;
+                  System.out.println("Programa finalizado.") ;
+                   break;
+           default:         System.out.println("La opción ingresada no es valida.\n"
+                   + "Programa Finalizado.");
+           contador=0;
+           break;
+}
+       }else if (operación==5){
+           System.out.println("El programa ha finalizado.");
+       contador=0;
+       }else{
+    System.out.println("La opción ingresada no es valida.\n");
+    contador=1;
+}
+         }
+    }
+    
+}
+
+
