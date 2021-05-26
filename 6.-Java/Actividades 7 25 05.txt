@@ -1,0 +1,148 @@
+Actividades 25 05
+__Arreglos (suma, ingreso, busqueda y ordenamiento)___
+
+
+
+package arreglosbasico;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class ArreglosBasico {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+          Scanner leer = new Scanner (System.in);
+          int suma= 0;
+          int i;
+        int[] numeros = new int[5];
+        for(i=0; i<5; i++){
+            System.out.println("Ingrese un valor");
+            numeros[i]= leer.nextInt();
+        }
+         System.out.println("Los numeros ingresados fueron: ");
+        for (i=0; i<5; i++){
+            System.out.println(+numeros[i]);
+            suma+=numeros[i];
+        }
+            System.out.println("La suma de los numeros ingresados fue: "+suma);
+     
+           {
+        for(int k=0;k<4;k++) {
+            for(int f=0;f<4-k;f++) {
+                if (numeros[f]>numeros[f+1]) {
+                    int aux;
+                    aux=numeros[f];
+                    numeros[f]=numeros[f+1];
+                    numeros[f+1]=aux;
+                }
+            }
+        }
+    }            System.out.println("El arreglo ordenado es: ");
+    for(int f=0;f<numeros.length;f++) {
+            System.out.println(numeros[f]);
+        }
+    }
+    
+}
+
+
+___Seleccion entre operaciones basicas
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package seleccion.entre.opbasic;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class SeleccionEntreOpbasic {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int contador=1;
+        
+        while (contador==1) {            
+            
+       
+          Scanner leer = new Scanner (System.in);
+          System.out.println("Ingrese qué tipo de operación desea realizar: \n"
+                  + "(1)Suma\n"
+                  + "(2)Resta\n"
+                  + "(3)Multiplicación\n"
+                  + "(4)División\n"
+                  + "(5)Terminar el programa"
+          );
+          
+                  
+          int operación;
+operación = leer.nextInt();
+if (operación<5 && operación>0)
+{
+    
+
+        System.out.println("Ingrese el numero 1 a operar: ");
+double numero1;
+double numero2;
+double resultado=0;
+        numero1 = leer.nextDouble();
+        System.out.println("Ingrese el numero 2 a operar: ");
+        numero2 = leer.nextDouble();
+        
+        switch (operación)
+        {
+            case 1: resultado=numero1+numero2;
+            break;
+            case 2: resultado=numero1-numero2;
+            break;
+            case 3: resultado=numero1*numero2;
+            break;
+            case 4: resultado=numero1/numero2;
+            break;
+            default: System.out.println("El número de operación seleccionado es invalido");
+                  break;
+        }
+       System.out.println("El resultado de su operación es: "+resultado
+       + "\n¿Desea realizar otra operación?\n"
+               + "(1)Sí\n"
+               + "(2)No");
+       int continuar;
+       continuar = leer.nextInt();
+       
+       switch (continuar){
+           case 1: contador=1;
+           break;
+           case 2: contador=0;
+                  System.out.println("Programa finalizado.") ;
+                   break;
+           default:         System.out.println("La opción ingresada no es valida.\n"
+                   + "Programa Finalizado.");
+           contador=0;
+           break;
+}
+       }else if (operación==5){
+           System.out.println("El programa ha finalizado.");
+       contador=0;
+       }else{
+    System.out.println("La opción ingresada no es valida.\n");
+    contador=1;
+}
+         }
+    }
+    
+}

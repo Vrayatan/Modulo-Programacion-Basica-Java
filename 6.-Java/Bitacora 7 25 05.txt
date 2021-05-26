@@ -1,0 +1,3 @@
+Bitacora 25 05 
+1. Busqué algoritmos de busqueda y ordenamiento
+2. Busqué cómo sumar los datos de un arreglo
