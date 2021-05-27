@@ -1,0 +1,132 @@
+Actividades 26 05 
+
+Tres clases:
+
+_____main___
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class TresClases {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+        CreacionPersonaje p1=new CreacionPersonaje();
+        p1.saludar();
+        
+        /*
+        char Tipo;
+        System.out.println("Ingresar tipo");
+        Tipo = leer.next().charAt(0);
+        */
+       // char HordaOAlianza='H';
+        p1.EligeHordaOAlianza();
+         //HordaOAlianza = leer.next().charAt(0);
+         
+        /*p1.HordaOAlianza(char HordaOAlianza);
+        System.out.println("" +HordaOAlianza);*/
+    }
+    
+}
+
+__C1: RazaWow__
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class RazaWoW {
+    //Atributos
+    int HordaOAlianza;
+    int Hrazas;
+            int Arazas;
+            
+       
+            
+}
+___ C2: CreaciónPersonaje___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class CreacionPersonaje {
+      char HordaOAlianza;
+    int Hrazas;
+            int Arazas;
+            
+             public void saludar(){
+System.out.println("Bienvenido a la creación de su personaje del WoW.");
+
+}
+           public char EligeHordaOAlianza(char HordaOAlianza)  {
+System.out.println("        Para comenzar, elija una facción:"
+        + "\n(H)Horda"
+        + "\n(A)Alianza");
+Scanner leer = new Scanner(System.in);
+
+HordaOAlianza = leer.next().charAt(0);
+return HordaOAlianza;
+           }
+
+/*public char HordaoAlianza(char HordaOAlianza){
+//
+Scanner leer = new Scanner(System.in);
+HordaOAlianza = leer.next().charAt(0);
+
+switch(HordaOAlianza){
+        case 'H': System.out.println("Has seleccionado la Horda.");
+        HordaOAlianza='H';
+        break;
+        case 'A': System.out.println("Has seleccionado la Alianza.");
+        HordaOAlianza='A';
+        break;
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+    }
+
+return HordaOAlianza;
+             }*/
+
+}
+
+___C3 Clase Wow ___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class ClaseWoW {
+    
+}

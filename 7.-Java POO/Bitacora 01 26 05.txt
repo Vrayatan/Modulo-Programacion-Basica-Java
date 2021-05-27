@@ -1,0 +1,5 @@
+Bitacora  26 05
+
+1. Investigué como scannear char en Java
+2.Investigué como utilizar switch para char
+3. Investigue la funcion return y como utilizarlo en mi proeycto
