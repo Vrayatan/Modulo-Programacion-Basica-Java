@@ -1,0 +1,130 @@
+___ Actividades 28 05___
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class RazaWoW {
+    //Atributos
+    String HordaOAlianza;
+    String ClaseWoW;
+            int Arazas;
+            
+             
+        String Raza;
+        int edad;
+        float estatura;
+        float peso;
+        
+        
+        
+       public RazaWoW(String HordaOAlianza, String Raza, String ClaseWoW)
+       {
+    this.HordaOAlianza=HordaOAlianza;
+    this.Raza=Raza;
+    this.ClaseWoW=ClaseWoW; 
+    //This se refiere a el atributo de la clase, no al del constructor
+       }
+       
+       
+       public class NombreReal{
+           
+        String Nombre;
+            public NombreReal(String Nombre){
+           
+               this.Nombre=Nombre;
+            
+}
+       
+       }
+}
+            
+
+____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class TresClases {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+   
+        
+        /*
+        char Tipo;
+        System.out.println("Ingresar tipo");
+        Tipo = leer.next().charAt(0);
+        */
+       // char HordaOAlianza='H';
+       
+               RazaWoW p1=new RazaWoW("Alianza", "Humano", "Sacerdote");
+
+      
+         System.out.println("La facción de p1 es: "+p1.HordaOAlianza
+        +"\nLa raza de p1 es: " +p1.Raza
+        + "\nLa clase de p1 es: "+p1.ClaseWoW
+         + "\n __________-__________");
+            
+         RazaWoW p2= new RazaWoW("Horda", "Orco", "Guerrero");
+          System.out.println("La facción de p2 es: "+p2.HordaOAlianza
+        +"\nLa raza de p2 es: " +p2.Raza
+        + "\nLa clase de p2 es: "+p2.ClaseWoW
+        + "\n __________-__________"  );
+    
+          //el print se puede convertir en metodo
+          //_____________________________________
+          
+          
+          
+          
+          
+          
+          
+        }
+    
+    
+    
+    
+    
+}
+    
+        /*switch(p1.HordaOAlianza){
+        case 'H': System.out.println("Has seleccionado la Horda.");
+        p1.HordaOAlianza='H';
+        break;
+        case 'A': System.out.println("Has seleccionado la Alianza.");
+        p1.HordaOAlianza='A';
+        break;
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+        }
+        */
+        
+         //HordaOAlianza = leer.next().charAt(0);
+         
+        /*p1.HordaOAlianza(char HordaOAlianza);
+        System.out.println("" +HordaOAlianza);*/
+    
+
+
+

@@ -1,0 +1,5 @@
+Bitacora 27 05
+
+1. Busque información respecto de las clases y como utilizarlas
+2. Busque como funciona el valor return
+3. busque como retornar variables desde otras clases
