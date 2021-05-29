@@ -1,0 +1,10 @@
+Bitacora
+
+1. Me viné pensando en la micro cómo se podía solucionar los errores que tenia en mi codigo de clases
+
+2. Busqué acerca de unos errores de java: 
+a.
+local variables hides a field
+b.
+methos unreacheble statement
+3. Busqué como llenar una clase por atributos separados java

@@ -1,0 +1,310 @@
+Actividades 28 05
+
+__Por fin terminé un ejercicio___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class TresClases {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+   
+        
+        /*
+        char Tipo;
+        System.out.println("Ingresar tipo");
+        Tipo = leer.next().charAt(0);
+        */
+       // char HordaOAlianza='H';
+       
+               RazaWoW p1=new RazaWoW("Alianza", "Humano", "Sacerdote");
+
+      
+         System.out.println("La facción de p1 es: "+p1.HordaOAlianza
+        +"\nLa raza de p1 es: " +p1.Raza
+        + "\nLa clase de p1 es: "+p1.ClaseWoW
+         + "\n __________-__________");
+            
+         RazaWoW p2= new RazaWoW("Horda", "Orco", "Guerrero");
+          System.out.println("La facción de p2 es: "+p2.HordaOAlianza
+        +"\nLa raza de p2 es: " +p2.Raza
+        + "\nLa clase de p2 es: "+p2.ClaseWoW
+        + "\n __________-__________"  );
+    
+          //el print se puede convertir en metodo
+          //_____________________________________
+          
+          
+          RazaWoW per1= new RazaWoW("", "", "");
+          per1.ElegirHordaoAlianza();
+         
+          per1.ElegirRaza();
+    
+          per1.ElegirClase();
+         
+          System.out.println("¡Felicidades! Has Creado un "+ per1.Raza
+    +" " + per1.ClaseWoW
+      +" de la " +    per1.HordaOAlianza );
+           per1.Creando();
+
+           
+            RazaWoW per2= new RazaWoW("", "", "");
+          per2.ElegirHordaoAlianza();
+         
+          per2.ElegirRaza();
+    
+          per2.ElegirClase();
+         
+          System.out.println("¡Felicidades! Has Creado un "+ per2.Raza
+    +" " + per2.ClaseWoW
+      +" de la " +    per2.HordaOAlianza );
+           per2.Creando();
+           
+      
+           
+           per2.Creando();
+           
+        }
+    
+    
+    
+    
+    
+}
+    
+        /*switch(p1.HordaOAlianza){
+        case 'H': System.out.println("Has seleccionado la Horda.");
+        p1.HordaOAlianza='H';
+        break;
+        case 'A': System.out.println("Has seleccionado la Alianza.");
+        p1.HordaOAlianza='A';
+        break;
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+        }
+        */
+        
+         //HordaOAlianza = leer.next().charAt(0);
+         
+        /*p1.HordaOAlianza(char HordaOAlianza);
+        System.out.println("" +HordaOAlianza);*/
+    
+
+
+___Modulos___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tresclases;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class RazaWoW {
+    Scanner leer = new Scanner(System.in);
+    //Atributos
+    String HordaOAlianza;
+    String ClaseWoW;
+            int Arazas;
+            
+                String nombre;
+        String Raza;
+        int edad;
+        float estatura;
+        float peso;
+        
+        char EligeHordaOAlianza;
+            
+       public RazaWoW(String HordaOAlianza, String Raza, String ClaseWoW)
+       {
+    this.HordaOAlianza=HordaOAlianza;
+    this.Raza=Raza;
+    this.ClaseWoW=ClaseWoW; 
+    //This se refiere a el atributo de la clase, no al del constructor
+              System.out.println(this.HordaOAlianza);
+       }
+       
+  
+           public char ElegirHordaoAlianza(){
+               char EligeHordaOAlianza1='H';
+             System.out.println("Elige una facción."
+                     + "\n(H)Horda"
+                     + "\n(A)Alianza");
+               EligeHordaOAlianza1 = leer.next().charAt(0);
+               switch(EligeHordaOAlianza1){
+        case 'H': System.out.println("Has seleccionado la Horda.");
+        this.HordaOAlianza="Horda";
+        break;
+        case 'A': System.out.println("Has seleccionado la Alianza.");
+        this.HordaOAlianza="Alianza";
+        break;
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+     }
+                System.out.println(" __________-__________");
+    return EligeHordaOAlianza1;
+        
+    }
+             public char ElegirRaza(){
+               char EligeRaza='H';
+               if(this.HordaOAlianza=="Horda"){
+                   System.out.println("A continuación elige una raza."
+                     + "\n(O)Orco"
+                     + "\n(T)Troll"
+                   + "\n(M)No-Muerto"
+                           + "\n(R)Tauren"
+                   + "\n(S)Elfo de Sangre");
+               }else{               
+             System.out.println("A continuación elige una raza."
+                     + "\n(H)Humano"
+                     + "\n(N)Elfo de Noche"
+                     + "\n(G)Gnomo"
+                                          + "\n(D)Draenei"
+                     + "\n(E)Enano");
+               }
+               EligeRaza = leer.next().charAt(0);
+               switch(EligeRaza){
+        case 'O': System.out.println("Has seleccionado la raza Orco.");
+        this.Raza="Orco";
+        break;
+        case 'T': System.out.println("Has seleccionado la raza Troll.");
+        this.Raza="Troll";
+        break;
+        case 'M': System.out.println("Has seleccionado la raza No-Muerto.");
+        this.Raza="No-Muerto";
+        break;
+        case 'R': System.out.println("Has seleccionado la raza Tauren.");
+        this.Raza="Tauren";
+        break;
+        case 'S': System.out.println("Has seleccionado la raza Elfo de Sangre.");
+        this.Raza="Elfo de Sangre";
+        break;
+        case 'H': System.out.println("Has seleccionado la raza Humano.");
+        this.Raza="Humano";
+        break;
+         case 'N': System.out.println("Has seleccionado la raza Elfo de Noche.");
+        this.Raza="Elfo de Noche";
+        break;
+         case 'G': System.out.println("Has seleccionado la raza Gnomo.");
+        this.Raza="Gnomo";
+        break;
+         case 'E': System.out.println("Has seleccionado la raza Enano.");
+        this.Raza="Enano";
+        break;
+          case 'D': System.out.println("Has seleccionado la raza Draenei.");
+        this.Raza="Draenei";
+        break;
+        
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+     }
+                System.out.println(" __________-__________");
+    return EligeRaza;
+        
+    }
+             
+             
+             
+              public char ElegirClase(){
+               char ElegirClase='H';
+               
+                   System.out.println("A continuación elige una clase para tu personaje."
+                     + "\n(G)Guerrero"
+                     + "\n(H)Cazador"
+                   + "\n(P)Paladin"
+                           + "\n(S)Sacerdote"
+                   + "\n(B)Brujo"
+                           
+                           
+                     + "\n(C)Chamán"
+                     + "\n(M)Mago"
+                     + "\n(D)Druida"
+                                          + "\n(R)Picaro");
+               
+               ElegirClase = leer.next().charAt(0);
+               switch(ElegirClase){
+        case 'G': System.out.println("Has seleccionado la raza Guerrero.");
+        this.ClaseWoW="Guerrero";
+        break;
+        case 'H': System.out.println("Has seleccionado la raza Cazador.");
+        this.ClaseWoW="Cazador";
+        break;
+        case 'P': System.out.println("Has seleccionado la raza Paladin.");
+        this.ClaseWoW="Paladin";
+        break;
+        case 'S': System.out.println("Has seleccionado la raza Sacerdote.");
+        this.ClaseWoW="Sacerdote";
+        break;
+        case 'B': System.out.println("Has seleccionado la raza Brujo.");
+        this.ClaseWoW="Brujo";
+        break;
+        case 'C': System.out.println("Has seleccionado la raza Chamán.");
+        this.ClaseWoW="Chamán";
+        break;
+        
+        
+         case 'M': System.out.println("Has seleccionado la raza Mago.");
+        this.ClaseWoW="Mago";
+        break;
+         case 'D': System.out.println("Has seleccionado la raza Druida.");
+        this.ClaseWoW="Druida";
+        break;
+         case 'R': System.out.println("Has seleccionado la raza Picaro.");
+        this.ClaseWoW="Picaro";
+        break;
+    default: System.out.println("Opción no valida. Reinicia el programa.");
+    break;
+     }
+          System.out.println(" __________-__________");   
+               
+               
+    return ElegirClase;
+        }
+    
+    public void Creando(){
+                  System.out.println("A continuación ingresa (C) para continuar");   
+char empty;
+ empty = leer.next().charAt(0);
+
+System.out.println("\nCreando a tu personaje..."
+        + "\n10%"
+        + "\n20%"
+        + "\n30%"
+        + "\n40%"
+        + "\nGenerando el mundo..."
+        
+        + "\n50%"
+        + "\n60%"
+        + "\n70%"
+        + "\n80%"
+        + "\n90%"
+        
+        + "\n100%"
+        + "\nPrepárate aventurero estás a punto de vivir una aventura épica...");
+
+    
+    }
+           
+           //Si Elegir Horda o Alianza = H, entonces rellenar el primer string con Horda
+}
+
+
+            
+
