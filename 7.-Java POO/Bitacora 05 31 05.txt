@@ -1,0 +1,5 @@
+Bitacora 31 05
+1. Investigué el comando Try
+2. Investigué como hacer un "press enter to continue"
+3. Investigué sobre arraylist
+4. Investigué como agregar elementos a array.

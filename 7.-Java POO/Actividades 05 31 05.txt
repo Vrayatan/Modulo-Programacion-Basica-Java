@@ -1,0 +1,275 @@
+Actividades 05 31 05
+
+Main________
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Pokemon;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+       //Ingresar nombre del jugador y sexo
+Jugador j1 = new Jugador();
+
+j1.setNombre("");
+j1.getNombre();
+j1.setGenero("");
+j1.getGénero();
+
+
+       //Bienvenido al mundo pokemon. Elije un pokemon.
+j1.setPokemon("");
+j1.getPokemon();
+
+       //Ubicación: Explorar el lugar, buscar una pelea,
+j1.setPokemon();
+j1.getPokemonArrayList();
+
+       //info pokemon, avanzar, retroceder.
+       
+       
+    }
+    
+}
+_____
+
+
+Jugador (clases y métodos)_______________
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Pokemon;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Jugador {
+    //Imports
+    Scanner leer = new Scanner (System.in);
+    ArrayList<String> movimientos = new ArrayList<String>(); 
+    
+    
+    
+    //Jugador 
+    private String nombre;
+    private String género;
+    
+    //Elije un pokemon
+    private String pokemon;
+    private int nivel;
+    private long experiencia;
+    private ArrayList movimientosP;
+    
+    
+    //Ubicación y accion
+    private String ubicación;
+    private int accionLugar;
+    private int movimiento;
+    private int lugar;
+    private int equipo;
+    
+    
+    //Extra    
+    private String continuar;
+
+
+//Métodos
+    
+     
+        
+        //Inicio, Nombre y Género
+    public void setNombre(String nombre){
+        
+        System.out.println("\n¡Bienvenido al mundo Pokemon!"
+                                + "\nMi nombre es el profesor Sajama y me dedico al estudio de los Pokemon"
+                + "\nPrimero que nada, ¿cuál es tu nombre?");
+        nombre = leer.nextLine();
+        this.nombre=nombre;
+    }
+    
+    public String getNombre(){
+        System.out.println("Asi que tu nombre es "+nombre +"...\n");
+        return nombre;     
+    }
+    
+    public void setGenero(String género){
+        int género1;
+        System.out.println("¿Eres un chico, una chica u otro?"
+                + "\n(1)Chico"
+                + "\n(2)Chica"
+                + "\n(3)No Binario");
+        género1=leer.nextInt();
+        switch(género1){
+            case 1: this.género="Chico";
+            break;
+            case 2: this.género="Chica";
+            break;
+            case 3: this.género="No Binario";
+            break;
+        }
+        
+    }
+    public String getGénero(){
+         System.out.println("Asi que eres "+género +"\n"
+                 + "Prepárate "+nombre
+                 +"\n¡Estás a punto de vivir una aventura sorprendente junto a tus Pokemon!"
+                         + "\nMuchas aventuras te esperan"
+                         + "\n___________________________");
+        return género;
+    } 
+    
+    //________________________________________
+    
+    //Elije un Pokemón. Set nivel, experiencia, movimientos
+    
+    public void setPokemon(String pokemon){
+        System.out.println("Despiertas en tu cuarto. \n"
+                + "Entra tu madre por la puerta y te recuerda que el prof. Sajama te había citado.\n"
+                + "Hoy es tu primer día de entrenador."
+                + "\n¿Estás preparado?"
+                + "\n\n\t (Presiona Enter para continuar)"
+        );
+        try {
+System.in.read();
+
+        } catch (Exception e) {
+        }
+
+        System.out.println("El profesor te espera con 3 pokeball en la mesa,"
+                + "\ncada uno tiene una etiqueta con un número."
+                + "\nApartado en una esquina también divisas otra pokeball,"
+                + "\nEsta porta el numero 4"
+                + "\n\n¿Qué Pokemon escogerás?, pregunta el profesor"
+                + "\n(1)Torchic \t(2)Piplup "
+                + "\n(3)Chikorita \t(4)Pokemón apartado");
+        int pokemon1 = leer.nextInt();
+        switch(pokemon1){
+            case 1: 
+                this.pokemon="Torchic";
+                break;
+            case 2: 
+                this.pokemon="Piplup";
+                break;
+            case 3: 
+                this.pokemon="Chikorita";
+                break;
+            case 4: 
+                this.pokemon="Pikachu";
+                break;
+        }
+    }
+ public String getPokemon(){
+     if (pokemon=="Pikachu") {
+         System.out.println("¡Guau! No pense que escogerías a "+pokemon);
+     }else{
+         System.out.println("Vaya, has escogido a "+pokemon);
+     }
+     System.out.println("");
+     
+     return pokemon; 
+        }    
+ 
+public void setPokemon(){
+   
+    this.nivel=5;
+    this.experiencia=0;
+    if (pokemon=="Pikachu") {
+        movimientos.add("Impactrueno");
+        movimientos.add("Gruñido");
+    }else if (pokemon=="Chikorita") {
+        movimientos.add("Placaje");
+        movimientos.add("Gruñido");
+    }
+    
+    //Continuar con starters
+            this.movimientosP=movimientos;
+}
+
+public ArrayList getPokemonArrayList(){
+    System.out.println("Tu "+pokemon +" es nivel "+nivel
+    + "\nTu " +pokemon +" tiene "+experiencia +" de experiencia");
+    System.out.println("Los movimientos de tu pokemón son:\n"+movimientos);
+    return movimientos;
+}
+ 
+ /*
+    public void setEdad(int edad){
+    this.edad=edad;
+}
+public int getEdad(){
+    return edad;
+}
+*/
+            
+            
+            
+}
+____
+
+Clase:
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Pokemon;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Encapsulamiento {
+
+    Scanner leer = new Scanner (System.in);
+    int edad;
+    float peso;
+    float estatura;
+    
+    
+public void setEdad(int edad){
+    this.edad=edad;
+}
+public int getEdad(){
+    return edad;
+}
+
+
+public void setEstatura(float estatura){
+    this.estatura=estatura;
+}
+public float getEstatura(){
+    return estatura;
+}
+    
+public void setPeso(float peso){
+    this.peso=peso;
+}
+public float getPeso(){
+    return peso;
+}
+
+
+
+
+}
