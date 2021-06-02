@@ -1,0 +1,5 @@
+Bitacora 01 06
+
+1. Investigué como utilizar numeros aleatorios
+2. Inveswtigué el comando Math.random()*
+3. Investigué el import java.util.random
