@@ -1,0 +1,6 @@
+Bitacora 07 02 06
+
+1. Tuve que recordar el comando Try
+2. Investigué como hacer un "press enter to continue" de nuevo 
+3. Investigué sobre arraylist a ver qué mas se podia hacer
+4. Investigué como agregar elementos a array de maneras creativas

@@ -1,0 +1,133 @@
+Actividades 02 06
+Ejercicio 1.
+
+1. Clase fecha. 
+2. 3 atributos: dia mes y año. int.
+3. Metodos: Constructor
+4. Parametros de constructor para crear valor inicial. 
+5. métodos get y set.  para obtener y asignar valores de atributo de clase.
+6. metodo fechacorrecta(); comprueba si la fecha es correcta. 
+7. metodo díasiguinte(); cambia fecha actual po la del dia siguiente. 
+8. El objeto de la clase fecha al que se aplique metodo debera quedar siempe en estado consistente. La nueva fecha debera ser correcta. 
+9. Main
+10. diaSiguiente() en un bucle que imprima la fecha en cada iteración del bucle. 
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg02.pkg06;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Fecha {
+//Import
+Scanner leer = new Scanner(System.in)    ;
+
+
+//Atributos
+    private int dia;
+    private int mes;
+    private int año;
+    private int contador;
+    //Fecha inicial
+    public void setFechaInicial(){
+        System.out.println("Bienvenido al creadorde fechas\n"
+                + "A continuación ingrese el día");
+        dia = leer.nextInt();
+        System.out.println("A continuación ingrese el mes");
+mes =leer.nextInt();
+        System.out.println("A continuación ingrese el año");
+año = leer.nextInt();
+
+    }
+    
+    public void getFechaInicial(){
+        System.out.println("La fecha ingresada es:\n Día "+dia +" del mes " +mes + " del año " + año);
+    }
+    
+    public void fechaCorrecta() {
+       int contador=1;
+        
+       //Dia inc
+       if (dia<1){
+            System.out.println("Fecha incorrecta, el dia es 0 o negativo");
+        contador--;
+        }
+        else if(dia>31){
+            System.out.println("Fecha incorrecta, el dia es mayor a 31");
+                    contador--;
+            }
+        
+       //Mes inc
+        if (mes<1){
+            System.out.println("Fecha incorrecta, el mes es 0 o negativo");
+                    contador--;
+        }
+        else if(mes>12){
+             System.out.println("Fecha incorrecta, el mes es mayor a 12");
+                     contador--;
+       }
+        if (dia>29 && mes == 2){
+            System.out.println("Fecha incorrecta: Febrero no puede tener mas de 29 dias");
+                contador--;
+        }
+            
+       if(contador==1){
+           System.out.println("La fecha es correcta. Prosigue con el programa.");
+           this.contador=contador;
+           
+       }else {
+           
+           System.out.println("Vuelve a ingresar una fecha correcta. Reinicia el programa");
+       }
+    }
+
+    public void diaSiguiente(){
+        if(contador==1){
+        int contador2=1;
+        int respuesta=0;
+
+                System.out.println("\nPresiona Enter para avanzar un día");
+                  try {
+        System.in.read();
+
+                } catch (Exception e) {
+                }
+        
+        while(contador2==1){
+            
+            
+            
+         if(dia<31)   {
+             dia++;
+         }else if(dia==31){
+             dia=1;
+             mes++;
+         }
+         if (mes>12){
+             mes=1;
+             año++;
+         }else if(mes==2 && dia==29){
+             mes=3;
+             dia=1;
+         }
+         
+                 System.out.println("La fecha actual es:\n Día "+dia +" del mes " +mes + " del año " + año);
+
+            System.out.println("¿Desea adelantar un día?\n"
+                    + "(1)Sí"
+                    + "(0)No");
+            
+            contador2=leer.nextInt();
+            
+        }
+        
+        }
+    }
+    
+}
