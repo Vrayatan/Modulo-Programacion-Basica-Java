@@ -1,0 +1,5 @@
+Bitacora 05 06
+1. Investigué los metodos de StringBuilder.
+2. Investigué como añadir objetos a ArrayList
+3. Investigué CLASE STRINGBUFFER
+

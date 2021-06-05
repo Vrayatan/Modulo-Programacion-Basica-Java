@@ -1,0 +1,219 @@
+Actividades 05 06
+clase:
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package libro;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class LibroClase {
+    static ArrayList<String> libros = new ArrayList();
+        private String titulo;
+        private String autor;
+        private int ejemplares;
+        private int prestados;
+        private int codigo;
+        private int i=1;
+        //imports
+        Scanner leer = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder();
+        
+        //SET/GET
+public void setTitulo(){
+        System.out.println("Introduzca el nombre del libro a ingresar");
+    this.titulo = leer.next();
+    }
+
+public String getTitulo(){
+return titulo;
+}
+        
+public void setAutor(){
+    System.out.println("Introduzca el autor del libro a ingresar");
+        this.autor = leer.next();
+}
+
+public String getAutor(){
+    return autor;
+}
+
+public void setEjemplares(){
+            System.out.println("Introduzca el numero de ejemplares del libro a ingresar");
+        this.ejemplares = leer.nextInt();
+        }
+        
+public int getEjemplares(){
+            return ejemplares;
+        }
+        
+public void setPrestados(){
+     System.out.println("¿Cuántos ejemplares hay prestados?");
+        this.prestados = leer.nextInt();
+ }
+ 
+public int getPrestados(){
+     return prestados;
+ }
+
+public void setCodigo(){
+        this.codigo = leer.nextInt();
+        }
+        
+public int getCódigo(){
+            return codigo;
+        }
+     
+@Override
+        public String toString(){
+            StringBuilder sBuilder = new StringBuilder();                                                                   
+        sBuilder.append("\nTítulo del libro: ");
+        sBuilder.append(titulo);
+        sBuilder.append("\nAutor/a del libro: ");
+        sBuilder.append(autor);
+        sBuilder.append("\nNumero de Ejemplares: \n");
+        sBuilder.append(ejemplares);
+        sBuilder.append("\nEjemplares Prestados: \n");
+        sBuilder.append(prestados);    
+        sBuilder.append("\nCódigo Libro: ");
+        sBuilder.append(i);
+        return sBuilder.toString();
+        
+        }
+        
+        //¿Desea agregar otro libro?
+        public void agregarLibros(){
+                     //Leer datos de cada libro
+            
+            i++;
+             System.out.println("Introduzca el nombre del libro a ingresar");
+        titulo = leer.next();
+        System.out.println("Introduzca el autor del libro a ingresar");
+        autor = leer.next();
+        System.out.println("Introduzca el numero de ejemplares del libro a ingresar");
+        ejemplares = leer.nextInt();
+        System.out.println("¿Cuántos ejemplares hay prestados?");
+        prestados = leer.nextInt();
+        codigo = i;
+            this.toString();
+            /*libros.add(this.toString());*/
+            
+        //LibroClase auxLibroClase= new LibroClase();
+          //auxLibroClase.setTituloAutorEjemplaresPrestados();
+           // libros.add(auxLibroClase);
+                
+                }
+       
+        //Prestamo
+        public void prestamo(){
+            //Aqui tengo que hacer una multiplicación para identificar el caracter
+            //dependiendo del codigo y ahi restarle y sumarle.
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        /* public static void mostrarLibros(){
+        for(int i = 0; i< libros.size(); i++)
+        System.out.println(libros.get(i));  //se invoca el método toString de la clase Coche
+        }        */
+        
+        
+        
+        /*
+        //Arraylist consiste en almacenar objetos
+    @Override
+        public String toString() {
+        StringBuilder sb = new StringBuilder();                                                                   
+        sb.append("\nMatrícula: ");
+        sb.append(titulo);
+        sb.append("\nMarca: ");
+        sb.append(autor);
+        sb.append("\nModelo: ");
+        sb.append(ejemplares);
+        sb.append("\nKm: ");
+        sb.append(prestados);    
+        return sb.toString();
+    }   
+        */
+        
+}
+:::main
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package libro;
+import java.util.ArrayList;
+import java.util.Scanner;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Libro {
+public static ArrayList<String> libros = new ArrayList();
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+    Scanner leer = new Scanner(System.in);
+        // TODO code application logic here
+    
+        LibroClase l1= new LibroClase();
+        l1.setTitulo();
+        l1.setAutor();
+        l1.setEjemplares();
+        l1.setPrestados();
+        l1.toString();
+        libros.add(l1.toString());
+      
+        
+        int i, N, aux;
+        i=1;
+        
+            do {                
+                System.out.println("¿Desea agregar otro libro?\n(1)Sí (0)No");
+                N=leer.nextInt();
+                if(N==1){
+                        i++;
+                        aux=i;
+                         System.out.println("Libro "+i);
+        l1.agregarLibros();
+        libros.add(l1.toString());
+                }
+                }while (N==1);
+        
+        System.out.println(libros); 
+       
+        /* LibroClase l2= new LibroClase();
+        l2.setTitulo();
+        l2.setAutor();
+        l2.setEjemplares();
+        l2.setPrestados();
+        l2.toString();
+        libros.add(l2.toString());
+        System.out.println(libros);*/
+        
+        
+//l1.leerLibros();
+  //      LibroClase.mostrarLibros();
+       // LibroClase aux = new LibroClase();
+        
+    }
+    
+}
