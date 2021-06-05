@@ -1,0 +1,4 @@
+Bitacora 04 06
+1. Investigué como crear objetos a través de método
+2. Investigué el metodo StringBuilder 
+3. Investigué cómo crear strings a través de varios atributos

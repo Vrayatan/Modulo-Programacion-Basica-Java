@@ -1,0 +1,120 @@
+Actividades 04 06
+1. Clase llamada Libro que guarde info de libros de biblioteca
+2. Atributos: titulo, autor, n° ejemplares del libro y n° ejemplares prestados
+3. Métodos: Constructor
+	Constructor con parametros
+	Set get
+	Prestamo que incremente los prestados. No se podrán prestar más de los que hay.
+	Devuelve true si se ha podido prestar, false si no.
+	Devolución que decremente el atributo correspondiente cuando se produzca devolución de libro.
+	No se podrán devolver libros no prestados.
+	True si fue posible realizar operación. false si no.
+	
+
+Clase____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package libro;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class LibroClase {
+    private ArrayList Libros;
+        private String titulo;
+        private String autor;
+        private int ejemplares;
+        private int prestados;
+        
+        //imports
+        Scanner leer = new Scanner(System.in);
+        
+        
+        //SET/GET
+        
+        public void setTituloAutorEjemplaresPrestados(){
+            System.out.println("Introduzca el nombre del libro a ingresar");
+        titulo = leer.next();
+        System.out.println("Introduzca el autor del libro a ingresar");
+        autor = leer.next();
+        System.out.println("Introduzca el numero de ejemplares del libro a ingresar");
+        ejemplares = leer.nextInt();
+        System.out.println("¿Cuántos ejemplares hay prestados?");
+        prestados = leer.nextInt();
+        }
+        
+        public String getTAEP(){
+        
+            StringBuilder sb = new StringBuilder();                                                                   
+        sb.append("\nMatrícula: ");
+        sb.append(titulo);
+        sb.append("\nMarca: ");
+        sb.append(autor);
+        sb.append("\nModelo: ");
+        sb.append(ejemplares);
+        sb.append("\nKm: ");
+        sb.append(prestados);    
+        
+        
+        return sb.toString();
+            
+        
+        }
+        
+        
+        
+        //Arraylist consiste en almacenar objetos
+    @Override
+        public String toString() {
+        StringBuilder sb = new StringBuilder();                                                                   
+        sb.append("\nMatrícula: ");
+        sb.append(titulo);
+        sb.append("\nMarca: ");
+        sb.append(autor);
+        sb.append("\nModelo: ");
+        sb.append(ejemplares);
+        sb.append("\nKm: ");
+        sb.append(prestados);    
+        return sb.toString();
+    }   
+        
+}
+___
+Main
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package libro;
+import java.util.ArrayList;
+/**
+ *
+ * @author Nicolás Palacios
+ */
+public class Libro {
+static ArrayList<LibroClase> libros = new ArrayList();
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    
+        LibroClase l1= new LibroClase();
+        l1.setTituloAutorEjemplaresPrestados();
+        l1.getTAEP();
+        
+        
+        
+        
+        
+    }
+    
+}
