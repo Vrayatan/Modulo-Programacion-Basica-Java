@@ -1,0 +1,173 @@
+Actividades 07 06
+
+main____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Electrodomesticos e1 = new Computador(true, "PC", "negro", "Samsung", 225);
+        System.out.println("Computador: ¿Es gamer? " +e1.getEsGamer());
+    }
+    
+}
+
+Superclase: Electrodomesticos____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Electrodomesticos{
+    private String color;
+    private String marca;
+    private int voltaje;
+    
+    public void setColor(){
+        this.color=color;
+    }
+    public String getColor(){
+        return color;
+    }
+    
+    public void setMarca(){
+        this.marca=marca;
+    }
+    public String getMarca(){
+        return marca;
+    }
+    public void setVoltaje(){
+        this.voltaje=voltaje;
+    }
+    public int getVoltaje(){
+        return voltaje;
+    }
+    
+     public Electrodomesticos(String color, String marca, int voltaje){
+        this.color=color;
+        this.marca=marca;
+        this.voltaje=voltaje;
+    }
+}
+
+   
+Subclase Nevera_____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Nevera extends Electrodomesticos{
+    private double grados;
+    private int numeroPuertas;
+    
+public Nevera(double grados, int numeroPuertas, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.grados=grados;
+this.numeroPuertas=numeroPuertas;
+}
+
+public double getGrados(){
+    return grados;
+}
+
+public int getNumeroPuertas(){
+    return numeroPuertas;
+}
+
+}
+___
+Sublcase: Tostadora
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Tostadora extends Electrodomesticos{
+  private int slots;
+  private double grados;
+
+   public Tostadora(double grados, int slots, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.grados=grados;
+this.slots=slots;   
+}
+   
+   public double getGrados()
+{
+return grados;
+}
+   
+   public int getSlots(){
+       return slots;
+   }
+   
+}
+_____
+Subclase: Computador
+    /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Computador extends Electrodomesticos{
+ 
+    private boolean  esGamer;
+    private String PcONotebook;
+            
+    public Computador (boolean esGamer, String PcONotebook, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.esGamer=esGamer;
+this.PcONotebook=PcONotebook;
+}
+
+public boolean getEsGamer(){
+    return esGamer;
+}    
+    
+public String getPcONotebook(){
+    return PcONotebook;
+}
+}
+
+    
+    
+    
+
