@@ -1,0 +1,10 @@
+Bitacora 07 06
+
+1. Investigue sobre polimorfismo
+2. investigue sobre subclases
+3. Investigue sobre netbeans y algunas funciones.
+
+Polimorfismo:
+metodos heredados de clase padre, redefinidos. se van a utilizar de otra manera.
+
+se heredan atributos y metodos

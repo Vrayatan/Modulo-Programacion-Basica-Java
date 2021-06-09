@@ -1,0 +1,4 @@
+Bitacora 0806
+1. Investigue Como crear Metodos Set y Get en Netbeans de una forma Rapida
+2. Investigue Instanciar SubClases A Partir De SuperClase
+3. -Investigue Why Netbeans suggests making variable final

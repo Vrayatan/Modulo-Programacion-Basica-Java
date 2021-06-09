@@ -1,0 +1,204 @@
+Actividades 08 06
+
+main___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Computador e1 = new Computador(true, "PC", "negro", "Samsung", 225);
+        System.out.println("Computador: ¿Es gamer? " +e1.getEsGamer());
+        Nevera e2 = new Nevera(30, 3, "blanco", "samsung", 220);
+        System.out.println("Nevera: Numero de puertas: "+e2.getNumeroPuertas());
+        Tostadora t2=new Tostadora(27, 2, "record", "samsung", 220);
+        System.out.println("Tostadora: slots "+t2.getSlots());
+    }
+    
+}
+___Superclass___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Electrodomesticos{
+    protected String color;
+    protected String marca;
+    protected int voltaje;
+    
+    public void setColor(){
+        this.color=color;
+    }
+    public String getColor(){
+        return color;
+    }
+    
+    public void setMarca(){
+        this.marca=marca;
+    }
+    public String getMarca(){
+        return marca;
+    }
+    public void setVoltaje(){
+        this.voltaje=voltaje;
+    }
+    public int getVoltaje(){
+        return voltaje;
+    }
+    
+     public Electrodomesticos(String color, String marca, int voltaje){
+        this.color=color;
+        this.marca=marca;
+        this.voltaje=voltaje;
+    }
+}
+
+   
+    
+    
+    
+    
+    
+
+___
+infraclase
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Tostadora extends Electrodomesticos{
+  protected int slots;
+  protected double grados;
+
+   public Tostadora(double grados, int slots, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.grados=grados;
+this.slots=slots;   
+}
+
+
+    public Tostadora() {
+        super(null, null, 0);
+    }
+    public void setSlots(int slots) {
+        this.slots = slots;
+    }
+
+    public void setGrados(double grados) {
+        this.grados = grados;
+    }
+   
+   public double getGrados()
+{
+return grados;
+}
+   
+   public int getSlots(){
+       return slots;
+   }
+   
+}
+___
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Nevera extends Electrodomesticos{
+    protected double grados;
+    protected int numeroPuertas;
+    
+public Nevera(double grados, int numeroPuertas, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.grados=grados;
+this.numeroPuertas=numeroPuertas;
+}
+
+public void setGrados(double grados){
+    this.grados=grados;
+}
+
+
+public double getGrados(){
+    return grados;
+}
+
+public void setNumeroPuertas(int numeroPuertas){
+    this.numeroPuertas=numeroPuertas;
+}
+public int getNumeroPuertas(){
+    return numeroPuertas;
+}
+
+}
+____
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0706.herencia;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Computador extends Electrodomesticos{
+ 
+    private boolean  esGamer;
+    private String PcONotebook;
+            
+    public Computador (boolean esGamer, String PcONotebook, String color, String marca, int voltaje){
+    super(color, marca, voltaje);
+this.esGamer=esGamer;
+this.PcONotebook=PcONotebook;
+}
+
+    public void setEsGamer(boolean esGamer){
+        this.esGamer=esGamer;
+        
+    }
+    
+    public void setPcONotebook (String PcONotebook){
+        this.PcONotebook=PcONotebook;
+    }
+public boolean getEsGamer(){
+    return esGamer;
+}    
+    
+public String getPcONotebook(){
+    return PcONotebook;
+}
+}
