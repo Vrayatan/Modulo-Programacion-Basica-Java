@@ -1,0 +1,9 @@
+Bitacora Clases abstractas 09 06 
+
+Solo se utiliza como superclase o clase padre
+No puede instanciar objetos de esta clase, solo sirve para generar nuevas clases a partir de esta
+
+Una de las consecuencias que tiene implementar metodos abstractos en la superclase es que obliga a que el metodo sea definido al crear clases hijas. Esto en algunos casos es necesario, para garantizar que las clases hijas "ini"
+arranquen con el metodo de manera obligatoria
+1.Investigue sobre clases abstractas
+2. Investigue sobre superclases

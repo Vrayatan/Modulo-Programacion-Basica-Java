@@ -1,0 +1,172 @@
+Actividades 09 06
+
+ Main:
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0906clasesabstractas;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Persona a1= new Adulto(22, 1.70, "nico", "pololo");
+        a1.mostrarDatos();
+        Persona b1= new Bebe(2, 0.5, "andrea", "Samsung");
+        b1.mostrarDatos();
+        Persona n1= new Niño(8, 1.2, "nachito", "BCV");
+        n1.mostrarDatos();
+    }
+    
+}
+
+___
+Clase abstracta:
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0906clasesabstractas;
+
+/**
+ *
+ * @author Alumno
+ */
+public abstract class Persona {
+    public abstract void mostrarDatos();
+    
+    private int edad;
+    private double estatura;
+    private String nombre;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getEstatura() {
+        return estatura;
+    }
+
+    public void setEstatura(double estatura) {
+        this.estatura = estatura;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public Persona(int edad, double estatura, String nombre){
+    this.edad=edad;
+    this.estatura=estatura;
+    this.nombre=nombre;
+    }
+    
+    
+    
+    
+    
+}
+
+___
+Subclase 1: Adulto
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0906clasesabstractas;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Adulto extends Persona {
+    private String trabajo;
+    
+    
+    public Adulto(int edad, double estatura, String nombre, String trabajo){
+    super(edad, estatura, nombre);
+this.trabajo=trabajo;
+}
+            
+            /* public Adulto(){
+        super(22, 1.76, "Nico");
+    }*/
+    @Override
+    public void mostrarDatos(){
+        System.out.println("Trabajo de Adulto: " + trabajo);
+    }
+}
+
+____
+Subclase 2: Bebe
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0906clasesabstractas;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Bebe extends Persona {
+    protected String marcaBiberon;
+    public Bebe(int edad, double estatura, String nombre, String marcaBiberon){
+    super(edad, estatura, nombre);
+this.marcaBiberon=marcaBiberon;
+}
+         @Override
+    public void mostrarDatos(){
+        System.out.println("La marca de biberón de bebé es: " + marcaBiberon);
+    }
+}
+
+____
+Subclase 3: Niño
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg0906clasesabstractas;
+
+/**
+ *
+ * @author Alumno
+ */
+public class Niño extends Persona {
+   protected String colegio;
+    public Niño(int edad, double estatura, String nombre, String colegio){
+    super(edad, estatura, nombre);
+this.colegio=colegio;
+}
+
+    
+    
+    @Override
+    public void mostrarDatos(){
+        System.out.println("Colegio de Persona es: "+colegio);
+    }
+}
+
