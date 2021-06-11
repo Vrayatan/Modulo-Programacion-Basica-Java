@@ -1,0 +1,36 @@
+Actividades 10 06
+
+diagrama de casos de uso 
+
+c utiliza para analizar un sistema 
+los tipos de roles y como interactuan con el sistema
+
+
+actor:
+monito de palo
+cualquier entidad q interactue con sistema. persona, organizacion o sistema externo
+
+diagrama de casos de uso
+Caso de uso: representa una funcion o accion dentro del sistema
+Se representa ocn un circulo
+
+asociacion: line que comunica un actor con un caso de uso, se representa con:
+monito>linea>circulo
+
+cliente>linea>comprar
+
+inclusion: insersion de comportamiento adicional en un caso de uso base, o sea el segundo es eesencial del primero, sin el segundo no puede llevarse a cabo. Se representa con linea punteada
+
+Del principal sale una flecha al secundario
+
+Por ejemplo
+una compra implica al segundo proceso que es disminuir el stock
+
+Extension, relacion que amplia la funcionalkidad de una caso de uso, no es indispensable pero agrega valor extr aal caso de uso, se representa de la siguiente manera.
+
+flecha punteada del caso secundario al caso principal
+
+
+Sistema:Define el alcance del caso de uso, es un elemento opcional, utilizado en sistemas excesivamente grandes que son representados por un rectangulo
+Cuadrado=Sistema. Alcance de casos de uso
+

@@ -1,0 +1,4 @@
+Bitacora 10 06
+1.Investigué sobre digramas de caso
+2. Investigué sobre dónde construirlos
+3. Investigué videos en youtube sobre java
