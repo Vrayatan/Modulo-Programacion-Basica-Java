@@ -1,0 +1,7 @@
+Bitacora 11 06
+
+1. Segui investigando durante la clase sobre StringBuffer
+StringBuilder Java. 
+Diferencias entre clases. 
+Criterios para elegir.
+ Métodos.

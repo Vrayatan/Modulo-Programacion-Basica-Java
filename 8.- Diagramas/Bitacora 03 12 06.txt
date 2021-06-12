@@ -1,0 +1,3 @@
+Bitacora 12 06
+
+1. Investigué sobreConcepto de gestión de excepciones en Java y ¿Qué es el tratamiento de errores en programación?
